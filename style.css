@@ -1,0 +1,193 @@
+/* Resetting margin, padding, dan box-sizing untuk semua elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Pengaturan latar belakang dan memusatkan form login secara vertikal dan horizontal */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #d1e7ff, #b3d1ff);
+    /* Latar belakang gradien biru pastel */
+    background-size: cover;
+    font-size: 16px;
+}
+
+/* Styling kontainer form login */
+.login-container {
+    background-color: #fff;
+    padding: 2.5rem;
+    border-radius: 20px;
+    /* Sudut yang membulat */
+    box-shadow: 0 10px 30px rgba(173, 216, 230, 0.3);
+    /* Bayangan biru pastel */
+    text-align: center;
+    width: 360px;
+    max-width: 100%;
+    transition: transform 0.3s ease;
+    /* Animasi hover */
+    border: 2px solid #b3d1ff;
+    /* Border warna biru pastel */
+}
+
+/* Membesarkan form saat di-hover */
+.login-container:hover {
+    transform: scale(1.05);
+}
+
+/* Styling judul */
+.login-container h2 {
+    margin-bottom: 1.5rem;
+    color: #7dafff;
+    /* Warna biru pastel lebih gelap */
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+/* Layout umum untuk form, membuatnya menjadi fleksibel dan terpusat */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling setiap grup input */
+.input-group {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+/* Styling untuk input (email dan password) */
+input {
+    padding: 12px 50px 12px 20px;
+    /* Padding dengan ruang untuk ikon */
+    width: 100%;
+    border: 1px solid #add8e6;
+    /* Border biru pastel */
+    border-radius: 30px;
+    /* Sudut membulat untuk input */
+    font-size: 1rem;
+    outline: none;
+    background-color: #e6f3ff;
+    /* Latar belakang biru pastel muda */
+    transition: border 0.3s ease;
+    /* Perubahan border saat fokus */
+}
+
+/* Mengubah warna border saat input fokus */
+input:focus {
+    border: 1px solid #7dafff;
+}
+
+/* Styling untuk ikon di dalam field input */
+.icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: #7dafff;
+    /* Warna ikon biru pastel */
+}
+
+/* Styling tombol login */
+.login-btn {
+    width: 100%;
+    background-color: #7dafff;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    /* Tombol membulat */
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    /* Efek hover */
+}
+
+/* Efek hover pada tombol login */
+.login-btn:hover {
+    background-color: #5f91e3;
+    transform: scale(1.05);
+}
+
+/* Styling link lupa password */
+.forgot-password {
+    text-align: center;
+    color: #7dafff;
+    font-size: 0.9rem;
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+}
+
+/* Efek hover untuk link lupa password */
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Styling untuk tombol login sosial (Google dan Facebook) */
+.social-login {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Styling tombol Google dan Facebook */
+.google-btn,
+.facebook-btn {
+    background-color: white;
+    border: 1px solid #add8e6;
+    color: #7dafff;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    /* Efek hover */
+    cursor: pointer;
+    width: 45%;
+    /* Ukuran tombol sosial */
+}
+
+/* Efek hover pada tombol login sosial */
+.google-btn:hover,
+.facebook-btn:hover {
+    background-color: #e6f3ff;
+    transform: scale(1.05);
+}
+
+/* Ikon di dalam tombol Google dan Facebook */
+.google-btn i,
+.facebook-btn i {
+    margin-right: 8px;
+    font-size: 1.2rem;
+}
+
+/* Styling teks bagian bawah untuk pendaftaran akun baru */
+.signup-text {
+    font-size: 0.9rem;
+    color: #7dafff;
+    margin-top: 1rem;
+}
+
+/* Link ke halaman sign up */
+.signup-text a {
+    color: #7dafff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Efek hover pada link sign up */
+.signup-text a:hover {
+    text-decoration: underline;
+}
